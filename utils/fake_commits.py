@@ -42,11 +42,3 @@ def commit(year, month):
         create_fake(num_commits, date.year, date.strftime('%m'), date.strftime('%d'))
 
 commit(2023, 1)
-commit(2023, 2)
-commit(2023, 3)
-commit(2023, 4)
-commit(2023, 5)
-commit(2023, 6)
-commit(2023, 7)
-commit(2023, 8)
-commit(2023, 9)

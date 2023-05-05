@@ -41,4 +41,4 @@ def commit(per_week, year, month):
         num_commits = random.choice(commit_options)
         create_fake(num_commits, date.year, date.strftime('%m'), date.strftime('%d'))
 
-commit(per_week=3, year=2023, month=4)
+commit(per_week=3, year=2023, month=5)

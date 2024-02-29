@@ -9,4 +9,4 @@ def fake_commits(n, year, month, day):
         os.system('git add .')
         os.system(f'git commit -m updates --date="{date}"')
 
-fake_commits(20, "2024", "03", "01")
+fake_commits(10, "2024", "03", "01")

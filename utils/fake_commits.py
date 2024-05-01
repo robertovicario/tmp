@@ -41,4 +41,4 @@ def commit(year, month):
         num_commits = random.choice(commit_options)
         create_fake(num_commits, date.year, date.strftime('%m'), date.strftime('%d'))
 
-commit(2024, 1)
+commit(2024, 5)

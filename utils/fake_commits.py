@@ -8,4 +8,4 @@ def fake_commits(n):
         os.system('git add .')
         os.system('git commit -m updates')
 
-fake_commits(10)
+fake_commits(20)

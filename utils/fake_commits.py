@@ -1,7 +1,7 @@
 import os
 
 def fake_commits(n, year, month, day):
-    date = f"{year}-{month}-{day}T00:00:00"
+    date = f"{year}-{month}-{day}T12:00:00"
     for i in range(n):
         with open('tmp.txt', 'a') as tmp:
             tmp.write("#" + str(i) + "\n")

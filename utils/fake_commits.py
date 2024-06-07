@@ -1,19 +1,11 @@
 import os
 
-from torch import rand
+def fake_commits(n):
+    for i in range(n):
+        with open('tmp.txt', 'a') as tmp:
+            tmp.write("#" + i + "\n")
 
-def operation():
-    with open('tmp.txt', 'a') as file:
-        file.write('#\n')
+        os.system('git add .')
+        os.system('git commit -m updates')
 
-    os.system("git add .")
-    os.system(f'git commit --date="2024-5-{str(rand)}" -m updates')
-
-for i in range(10):
-    operation()
-
-for i in range(20):
-    operation()
-
-for i in range(30):
-    operation()
+fake_commits(10)
